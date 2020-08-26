@@ -1,0 +1,35 @@
+.chewy-tab-title {
+  margin: 10px 10px -2px 10px;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+  padding: 15px;
+
+  &:hover {
+    border-color: #666;
+  }
+
+  &:active {
+    border-color: #ccc;
+  }
+
+  &--disabled {
+    border-bottom: 2px solid #eee;
+    pointer-events: none;
+  }
+}
+
+.chewy-tab-panel {
+  border: 2px solid black;
+  padding: 15px;
+  min-height: 400px;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.app-tab-layout {
+  display: flex;
+  flex-direction: column;
+}
