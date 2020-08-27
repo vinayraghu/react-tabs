@@ -1,15 +1,19 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
 .chewy-tab-title {
-  margin: 10px 10px -2px 10px;
+  margin: 10px;
   cursor: pointer;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #c4b7cb;
   padding: 15px;
 
   &:hover {
-    border-color: #666;
+    border-color: #36bf8a;
   }
 
   &:active {
-    border-color: #ccc;
+    border-color: #0b090c;
   }
 
   &--disabled {
@@ -19,7 +23,7 @@
 }
 
 .chewy-tab-panel {
-  border: 2px solid black;
+  border: 2px solid #545c52;
   padding: 15px;
   min-height: 400px;
   display: none;
@@ -31,5 +35,4 @@
 
 .app-tab-layout {
   display: flex;
-  flex-direction: column;
 }

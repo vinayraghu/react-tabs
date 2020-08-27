@@ -18,10 +18,7 @@ const Tabs = () => {
         />
         <TabTitle
           title="banana"
-          onClick={() => {
-            console.log("here");
-            setActiveTab("banana");
-          }}
+          onClick={() => setActiveTab("banana")}
         />
         <TabTitle title="cherry" onClick={() => setActiveTab("cherry")} />
       </div>
