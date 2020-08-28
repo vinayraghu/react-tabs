@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../../../component-library/chewy-tabs.css";
 import "./tabStyles.scss";
 import TabTitle from "./tabTitle";
 import TabPanel from "./tabPanel";
@@ -9,17 +10,14 @@ const Tabs = () => {
     setActiveTab("banana");
   }, []);
   return (
-    <>
+    <section className="app">
       <div className="app-tab-layout">
         <TabTitle
           title="apple"
           disabled
           onClick={() => setActiveTab("apple")}
         />
-        <TabTitle
-          title="banana"
-          onClick={() => setActiveTab("banana")}
-        />
+        <TabTitle title="banana" onClick={() => setActiveTab("banana")} />
         <TabTitle title="cherry" onClick={() => setActiveTab("cherry")} />
       </div>
       <div>
@@ -33,7 +31,7 @@ const Tabs = () => {
           active={activeTab === "cherry"}
         />
       </div>
-    </>
+    </section>
   );
 };
 

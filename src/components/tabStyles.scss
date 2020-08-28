@@ -2,37 +2,12 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-.chewy-tab-title {
-  margin: 10px;
-  cursor: pointer;
-  border-bottom: 2px solid #c4b7cb;
-  padding: 15px;
-
-  &:hover {
-    border-color: #36bf8a;
-  }
-
-  &:active {
-    border-color: #0b090c;
-  }
-
-  &--disabled {
-    border-bottom: 2px solid #eee;
-    pointer-events: none;
-  }
-}
-
-.chewy-tab-panel {
-  border: 2px solid #545c52;
-  padding: 15px;
-  min-height: 400px;
-  display: none;
-
-  &--active {
-    display: block;
-  }
-}
-
 .app-tab-layout {
   display: flex;
+  // flex-direction: column;
 }
+
+// .app {
+//   display: grid;
+//   grid-template-columns: 30% 70%;
+// }
