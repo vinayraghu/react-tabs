@@ -11,15 +11,6 @@ const Tabs = () => {
   }, []);
   return (
     <section className="app">
-      <div className="app-tab-layout">
-        <TabTitle
-          title="apple"
-          disabled
-          onClick={() => setActiveTab("apple")}
-        />
-        <TabTitle title="banana" onClick={() => setActiveTab("banana")} />
-        <TabTitle title="cherry" onClick={() => setActiveTab("cherry")} />
-      </div>
       <div>
         <TabPanel content={"apples are great"} active={activeTab === "apple"} />
         <TabPanel
@@ -30,6 +21,15 @@ const Tabs = () => {
           content={"cherries are great"}
           active={activeTab === "cherry"}
         />
+      </div>
+      <div className="app-tab-layout">
+        <TabTitle
+          title="apple"
+          disabled
+          onClick={() => setActiveTab("apple")}
+        />
+        <TabTitle title="banana" onClick={() => setActiveTab("banana")} />
+        <TabTitle title="cherry" onClick={() => setActiveTab("cherry")} />
       </div>
     </section>
   );
