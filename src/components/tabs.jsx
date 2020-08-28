@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../../component-library/chewy-tabs.css";
+import "./chewy-tabs.css";
 import "./tabStyles.scss";
 import TabTitle from "./tabTitle";
 import TabPanel from "./tabPanel";
